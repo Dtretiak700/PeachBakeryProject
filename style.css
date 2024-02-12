@@ -1,0 +1,545 @@
+@import url('https://fonts.cdnfonts.com/css/always-in-my-heart');
+@import url('https://fonts.cdnfonts.com/css/gordita');
+
+body {
+    margin: 0;
+}
+
+.main-container {
+    position: relative;
+}
+
+.header-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.under-title-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.under-title {
+    font-family: 'Gordita', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #eee3d8;
+}
+
+#main-video {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    filter: blur(15px);
+}
+
+.head {
+    font-size: 120px;
+    font-family: 'Always In My Heart', sans-serif;
+    font-weight: 900;
+    color: #ffbacf;
+}
+
+.about-us-container {
+    min-height: 700px;
+    background-attachment: fixed;
+    background-image: url(Background-about-us.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-around-container{
+    background-color: rgb(255,255,255, 0.6);
+    padding: 20px;
+    border: 10px solid #fd8eb0;
+    border-radius: 40px;
+}
+
+.text-about-us {
+    color: #544236;
+    font-size: 30px;
+    font-family: 'Gordita', sans-serif;
+}
+
+.about-delivery-container {
+    background-color: #4A413C;
+}
+
+.img-donuts {
+    width: 150px;
+}
+
+.title-container-for-about {
+    position: relative;
+    background-color: #4A413C;
+}
+
+.head-two {
+    font-size: 120px;
+    font-family: 'Always In My Heart', sans-serif;
+    font-weight: 900;
+    color: #ffbacf;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.under-titleTwo {
+    font-family: 'Gordita', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #eee3d8;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 250%);
+}
+
+.info-delivery-card {
+    width: 755px;
+    margin-top: 200px;
+    padding: 40px;
+    left: 50%;
+    transform: translate(30%);
+}
+
+.group-of-cakes-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    margin-top: 50px;
+}
+
+.text-info-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 20px;
+    border: 10px solid #fd8eb0;
+    border-radius: 40px;
+}
+
+.info-text {
+    font-family: 'Gordita', sans-serif;
+    color: #544236;
+    font-size: 20px;
+    text-align: center;
+}
+
+.group-cake {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 15px;
+
+}
+
+.cake {
+    width: 300px;
+    height: 400px;
+    background-color: #FFEFE2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(8px 4px 10px rgba(0, 0, 0, 0.25));
+}
+
+.back-card-text {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+.group-card-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flip-card {
+    background-color: #FFEFE2;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.flip-card-back {
+    background-color: #FFEFE2;
+    font-family: 'Gordita', sans-serif;
+    color: #544236;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+.text-cont {
+    width: 280px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.text-cost {
+    font-size: 12px;
+    font-family: 'Gordita', sans-serif;
+    color: #544236;
+}
+
+span {
+    font-weight: bold;
+}
+
+.img-cont {
+    width: 250px;
+    height: 230px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.oneImg {
+    background-image: url(cheesecake.jpg);
+}
+
+.twoImg {
+    background-image: url(mini\ chocolate\ cake\ with\ sprinkles.jpg);
+}
+
+.threeImg {
+    background-image: url(mascarpone\ strawberry-cake.jpg);
+}
+
+.fourImg {
+    background-image: url(vanilla\ pie.jpg);
+}
+
+.fiveImg {
+    background-image: url(mini\ mousse\ cake.jpg);
+}
+
+.sixImg {
+    background-image: url(tiramisu.jpg);
+}
+
+.sevenImg {
+    background-image: url(lemon-cheesecake.jpg);
+}
+
+.eightImg {
+    background-image: url(carrot-cake.jpg);
+}
+
+input {
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    align-self: center;
+}
+
+.contact-us-footer {
+    background-image: url(Backgr\ Delivery\ Cakes\ Buttons.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.buttons-container {
+    margin-left: 50px;
+}
+
+.btn-delivery {
+    color: #ffffff;
+    background-color: #4A413C;
+    border: 1px solid #4A413C;
+    font-size: 16px;
+    border-radius: 43px;
+    padding: 20px;
+    width: 200px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.btn-calculate {
+    color: #4A413C;
+    background-color: #FFB9CF;
+    font-size: 16px;
+    border-radius: 43px;
+    border: 1px solid #4A413C;
+    padding: 20px;
+    width: 200px;
+    margin: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-clear {
+    color: #4A413C;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 43px;
+    border: 1px solid #4A413C;
+    padding: 20px;
+    width: 200px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.show-the-cost {
+    display: flex;
+    margin-left: 200px;
+}
+
+.show-delivery {
+    width: 200px;
+    height: 160px;
+    border: 1px solid #4A413C;
+    border-radius: 19px;
+    font-family: 'Gordita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.sum {
+    display: flex;
+}
+
+.main-container-contact {
+    padding: 20px;
+    border: 10px solid #fd8eb0;
+    border-radius: 40px;
+    margin-left: 50px;
+    text-align: center;
+    width: 700px;
+}
+
+.main-container-contactTwo {
+    width: 500px;
+}
+
+.call-container {
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+
+.btn-call {
+    background-color: #FFFFFF;
+    border: 5px solid #FD8EB0;
+    border-radius: 43px;
+    height: 70px;
+    width: 220px;
+    align-self: center;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+}
+
+.link-call {
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Gordita';
+    font-weight: 600;
+    color: #4A413C;
+}
+
+.questions {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 10px solid #fd8eb0;
+    border-radius: 40px;
+    width: 500px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.form-message {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.label-info {
+    font-size: 20px;
+    color: #4A413C;
+    font-family: 'Gordita';
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.input-field {
+    font-size: 20px;
+    color: #4A413C;
+    font-family: 'Gordita';
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+}
+
+.big {
+    height: 60px;
+}
+
+.other-text {
+    font-size: 20px;
+    color: #4A413C;
+    font-family: 'Gordita';
+}
+
+.label-btn {
+    margin-right: 100px;
+}
+
+hr {
+    border: .5px solid #4A413C;
+    width: 80%;
+}
+
+.text-designed {
+    color: #4A413C;
+    font-family: 'Gordita';
+    font-size: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+@media all and (max-width:800px) {
+    .head, .head-two {
+        font-size: 80px;
+    }
+
+    .under-title, .under-titleTwo {
+        font-size: 20px;
+    }
+
+    .text-about-us, .info-text, .other-text, .input-field {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .info-delivery-card {
+        width: 400px;
+        padding: 10px;
+        margin-top: 150px;
+        left: 50%;
+        transform: translate(40%);
+    }
+
+    .main-container-contact, .main-container-contactTwo, .text-info-container, .questions, .text-around-container {
+        width: 400px;
+        margin: 0;
+    }
+
+.call-container {
+    padding: 10px;
+}
+
+    .group-cake {
+        flex-direction: column;
+    }
+
+    .show-the-cost, .buttons-container, .call-container {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-us-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-donuts {
+        width: 100px;
+    }
+    
+    .label-info {
+        margin: 0;
+        font-size: 15px;
+    }
+    
+    .input-field {
+        width: 150px;
+    }
+
+    .label-btn {
+        margin: 0;
+    }
+}
+
+@media all and (max-width:500px) {    
+    .head, .head-two {
+        font-size: 45px;
+    }
+
+    .under-title, .under-titleTwo {
+        font-size: 15px;
+    }
+
+    .text-about-us, .info-text, .other-text {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .info-delivery-card {
+        width: 300px;
+        padding: 10px;
+        margin-top: 100px;
+        left: 50%;
+        transform: translate(10%);
+    }
+
+    .main-container-contact, .main-container-contactTwo, .text-info-container, .questions {
+        width: 350px;
+    }
+
+    .img-donuts {
+        width: 70px;
+    }
+}
